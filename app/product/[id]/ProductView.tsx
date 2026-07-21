@@ -97,7 +97,7 @@ export function ProductView({ product, related }: { product: Product; related: P
                 boxShadow: 'rgba(0,0,0,0.08) 0px 16px 40px 0px'
               }}
             >
-              <ImageSlot label={product.name} />
+              <ImageSlot label={product.name} artId={product.id} />
             </div>
             <HandmadeBadge label="handmade ♥" bg="#ffd9e7" ink="#c14d84" rotate={6} style={{ position: 'absolute', top: 0, right: '2%' }} />
             <div

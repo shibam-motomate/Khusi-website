@@ -89,7 +89,7 @@ export default function CatalogPage() {
                     boxShadow: 'rgba(0,0,0,0.07) 0px 14px 34px 0px'
                   }}
                 >
-                  <ImageSlot label={p.name} ballColor={t.ball} />
+                  <ImageSlot label={p.name} artId={p.id} ballColor={t.ball} />
                 </div>
                 <HandmadeBadge
                   label={t.badge}

@@ -18,7 +18,7 @@ export function ProductCard({ product }: { product: Product }) {
         }}
       >
         <div style={{ width: '100%', aspectRatio: '1/1' }}>
-          <ImageSlot label={product.name} />
+          <ImageSlot label={product.name} artId={product.id} />
         </div>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 3, padding: '0 2px' }}>

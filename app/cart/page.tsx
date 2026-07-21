@@ -64,7 +64,7 @@ export default function CartPage() {
                       boxShadow: 'rgba(0,0,0,0.06) 0px 6px 16px 0px'
                     }}
                   >
-                    <ImageSlot label={item.name} />
+                    <ImageSlot label={item.name} artId={item.productId} />
                   </div>
                   <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: 4 }}>
                     <span style={{ fontWeight: 600, fontSize: 15, color: '#2b1a07' }}>{item.name}</span>

@@ -390,7 +390,7 @@ export default function HomePage() {
               transform: 'rotate(-2.5deg)'
             }}
           >
-            <ImageSlot label="A favorite finished piece" />
+            <ImageSlot label="A favorite finished piece" artId="hero" />
           </div>
           <div
             style={{
@@ -544,7 +544,7 @@ export default function HomePage() {
                 boxShadow: 'rgba(0,0,0,0.08) 0px 16px 40px 0px'
               }}
             >
-              <ImageSlot label="Crochet rose — big, close" />
+              <ImageSlot label="Crochet rose — big, close" artId="rose-single" />
             </div>
             <HandmadeBadge label="made to order" bg="#ffd9e7" ink="#c14d84" rotate={6} style={{ position: 'absolute', top: '2%', right: '6%', boxShadow: 'none' }} />
             <div className="caveat" style={{ position: 'absolute', bottom: 0, left: '2%', fontWeight: 700, fontSize: 22, color: '#171717', transform: 'rotate(-4deg)' }}>
@@ -572,7 +572,7 @@ export default function HomePage() {
         media={
           <>
             <div style={{ width: '82%', aspectRatio: '4/5', border: '1.5px solid #171717', borderRadius: 20, overflow: 'hidden' }}>
-              <ImageSlot label="Cuddle teddy bear — big, close" ballColor="#62c6a0" />
+              <ImageSlot label="Cuddle teddy bear — big, close" artId="teddy-bear" />
             </div>
             <HandmadeBadge label="made with love ♥" bg="#d5f0e4" ink="#1f7a58" rotate={-6} style={{ position: 'absolute', top: '3%', left: '4%', boxShadow: 'none' }} />
             <div className="caveat" style={{ position: 'absolute', bottom: '4%', right: '2%', fontWeight: 700, fontSize: 22, color: '#171717', transform: 'rotate(-5deg)' }}>
@@ -600,7 +600,7 @@ export default function HomePage() {
         media={
           <>
             <div style={{ width: '82%', aspectRatio: '4/5', border: '1.5px solid #171717', borderRadius: 20, overflow: 'hidden' }}>
-              <ImageSlot label="Granny-square bag — big, close" ballColor="#62b6e6" />
+              <ImageSlot label="Granny-square bag — big, close" artId="shoulder-bag" />
             </div>
             <HandmadeBadge label="handmade" bg="#d3ecfb" ink="#2b86c4" rotate={5} style={{ position: 'absolute', top: '3%', right: '4%', boxShadow: 'none' }} />
             <div className="caveat" style={{ position: 'absolute', top: '10%', left: '2%', fontWeight: 700, fontSize: 22, color: '#171717', transform: 'rotate(-7deg)' }}>
@@ -744,7 +744,7 @@ export default function HomePage() {
                   borderRadius: blobs[i % blobs.length]
                 }}
               >
-                <ImageSlot label={rp.name} />
+                <ImageSlot label={rp.name} artId={rp.id} />
               </div>
               <span className="caveat" style={{ fontWeight: 700, fontSize: 18, color: '#ff6f1e' }}>
                 {rp.caption}
@@ -775,7 +775,7 @@ export default function HomePage() {
         }}
       >
         <div style={{ minHeight: 340 }}>
-          <ImageSlot label="Custom doll / bouquet examples" />
+          <ImageSlot label="Custom doll / bouquet examples" artId="custom" />
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 14, padding: 48 }}>
           <span className="caveat" style={{ fontWeight: 700, fontSize: 22, color: '#ff6f1e' }}>

@@ -1,18 +1,44 @@
 import type { CSSProperties } from 'react';
 import { YarnBall } from './motifs';
+import { ART } from './illustrations';
 
-/* Placeholder for product photography: the design ships drag-and-drop image
-   slots to be filled with real crochet photos. Until those exist we render a
-   warm-tinted frame with a yarn ball + caption so the demo reads finished. */
+/* Product imagery slot. If demo artwork is registered for `artId`, render the
+   flat illustration; otherwise fall back to a warm-tinted placeholder with a
+   yarn ball + caption. Swap the artwork for real crochet photography later. */
 export function ImageSlot({
   label,
+  artId,
   ballColor = '#ff8fbf',
   style
 }: {
   label: string;
+  artId?: string;
   ballColor?: string;
   style?: CSSProperties;
 }) {
+  const art = artId ? ART[artId] : undefined;
+
+  if (art) {
+    return (
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          background: art.bg,
+          backgroundImage:
+            'repeating-linear-gradient(45deg,rgba(43,26,7,0.025) 0 2px,transparent 2px 9px),repeating-linear-gradient(-45deg,rgba(43,26,7,0.02) 0 2px,transparent 2px 9px)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          overflow: 'hidden',
+          ...style
+        }}
+      >
+        <div style={{ width: '86%', height: '86%' }}>{art.node}</div>
+      </div>
+    );
+  }
+
   return (
     <div
       style={{
