@@ -107,7 +107,7 @@ export default function CatalogPage() {
                   {p.name}
                 </h3>
                 <Stitch color={t.accent} width={70} />
-                <span style={{ fontSize: 18, fontWeight: 600, marginTop: 2 }}>${p.price}</span>
+                <span style={{ fontSize: 18, fontWeight: 600, marginTop: 2 }}>₹{p.price}</span>
                 <span className="pill-btn" style={{ marginTop: 10, alignSelf: 'flex-start', padding: '9px 22px', fontSize: 14 }}>
                   View &amp; Order →
                 </span>

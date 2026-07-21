@@ -752,7 +752,7 @@ export default function HomePage() {
               <h4 className="fredoka" style={{ fontWeight: 600, fontSize: 20, margin: 0, color: '#2b1a07' }}>
                 {rp.name}
               </h4>
-              <span style={{ fontSize: 16, fontWeight: 600 }}>${rp.price}</span>
+              <span style={{ fontSize: 16, fontWeight: 600 }}>₹{rp.price}</span>
             </Link>
           ))}
         </div>

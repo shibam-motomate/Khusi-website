@@ -83,6 +83,29 @@ export function Footer({ links = DEFAULT_LINKS }: { links?: FooterLink[] }) {
             @happylooops
           </span>
         </div>
+        <div
+          style={{
+            position: 'relative',
+            maxWidth: 900,
+            margin: '30px auto 0',
+            paddingTop: 16,
+            borderTop: '2px dashed rgba(43,26,7,0.3)',
+            display: 'flex',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: 10,
+            textAlign: 'center'
+          }}
+        >
+          <span style={{ fontSize: 13, fontWeight: 500, color: '#2b1a07' }}>
+            © {new Date().getFullYear()} happy loops · all rights reserved
+          </span>
+          <span style={{ color: '#2b1a07', opacity: 0.55 }}>✿</span>
+          <span className="caveat" style={{ fontWeight: 700, fontSize: 18, color: '#fff4e6' }}>
+            made by shibam ♥
+          </span>
+        </div>
       </footer>
     </>
   );

@@ -9,7 +9,7 @@ A small-batch, made-to-order crochet storefront ("happy loops"), built with **Ne
 | `/` | Home — hero, statement, product story panels, no-list, extras, shelf, custom callout |
 | `/shop` | Catalog — all products, alternating blob-framed rows |
 | `/product/[id]` | Product detail — gallery, color/size selection, add to cart |
-| `/cart` | Cart — quantity steppers, remove, order summary, free shipping over $50 |
+| `/cart` | Cart — quantity steppers, remove, order summary, free shipping over ₹50 |
 | `/checkout` | Checkout — contact/shipping/payment form (prototype — no real payment) |
 | `/custom-order` | Custom order request form |
 

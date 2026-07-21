@@ -141,21 +141,21 @@ export default function CheckoutPage() {
                       <span>
                         {item.qty}× {item.name}
                       </span>
-                      <span>${item.price}</span>
+                      <span>₹{item.price}</span>
                     </div>
                   ))}
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14, borderTop: '1px solid #171717', paddingTop: 14 }}>
                   <span>Subtotal</span>
-                  <span>${subtotal}</span>
+                  <span>₹{subtotal}</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
                   <span>Shipping</span>
-                  <span>{shipping === 0 ? 'Free' : `$${shipping}`}</span>
+                  <span>{shipping === 0 ? 'Free' : `₹${shipping}`}</span>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 16, fontWeight: 700, borderTop: '1px solid #171717', paddingTop: 14 }}>
                   <span>Total</span>
-                  <span>${total}</span>
+                  <span>₹{total}</span>
                 </div>
                 <button onClick={placeOrder} className="pill-btn" style={{ justifyContent: 'center', padding: '13px 0', marginTop: 8 }}>
                   Place Order

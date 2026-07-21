@@ -136,7 +136,7 @@ export function ProductView({ product, related }: { product: Product; related: P
             {product.name}
           </h1>
           <Stitch width={80} />
-          <span style={{ fontSize: 24, fontWeight: 600, color: '#2b1a07' }}>${product.price}</span>
+          <span style={{ fontSize: 24, fontWeight: 600, color: '#2b1a07' }}>₹{product.price}</span>
           <p style={{ fontSize: 16, lineHeight: 1.6, color: '#2b1a07', margin: 0 }}>{product.description}</p>
 
           <div>
@@ -221,7 +221,7 @@ export function ProductView({ product, related }: { product: Product; related: P
                 transition: 'background .3s ease'
               }}
             >
-              {added ? 'Added to your cart ✓' : `Add to Cart — $${product.price}`}
+              {added ? 'Added to your cart ✓' : `Add to Cart — ₹${product.price}`}
             </button>
           </div>
           {added && (

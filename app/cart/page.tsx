@@ -105,7 +105,7 @@ export default function CartPage() {
                       +
                     </button>
                   </div>
-                  <span style={{ fontWeight: 600, fontSize: 15, minWidth: 60, textAlign: 'right' }}>${item.qty * item.price}</span>
+                  <span style={{ fontWeight: 600, fontSize: 15, minWidth: 60, textAlign: 'right' }}>₹{item.qty * item.price}</span>
                 </div>
               ))}
             </div>
@@ -143,11 +143,11 @@ export default function CartPage() {
               <Stitch width={60} />
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
                 <span>Subtotal</span>
-                <span>${subtotal}</span>
+                <span>₹{subtotal}</span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 14 }}>
                 <span>Shipping</span>
-                <span>{shipping === 0 ? 'Free' : `$${shipping}`}</span>
+                <span>{shipping === 0 ? 'Free' : `₹${shipping}`}</span>
               </div>
               <div
                 style={{
@@ -160,11 +160,11 @@ export default function CartPage() {
                 }}
               >
                 <span>Total</span>
-                <span>${total}</span>
+                <span>₹{total}</span>
               </div>
               {subtotal > 0 && subtotal < 50 && (
                 <span className="caveat" style={{ fontWeight: 700, fontSize: 17, color: '#1f9e73' }}>
-                  ✿ free shipping over $50
+                  ✿ free shipping over ₹50
                 </span>
               )}
               <Link href="/checkout" className="dark-btn dark-btn--bordered" style={{ textAlign: 'center', padding: '14px 0', marginTop: 8 }}>

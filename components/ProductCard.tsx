@@ -28,7 +28,7 @@ export function ProductCard({ product }: { product: Product }) {
         <span className="fredoka" style={{ fontWeight: 600, fontSize: 17, color: '#2b1a07' }}>
           {product.name}
         </span>
-        <span style={{ fontSize: 15, fontWeight: 600, color: '#171717' }}>${product.price}</span>
+        <span style={{ fontSize: 15, fontWeight: 600, color: '#171717' }}>₹{product.price}</span>
       </div>
     </Link>
   );
